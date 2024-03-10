@@ -150,25 +150,6 @@ function handleShiftPress(event) {
        window.print();
      } 
 
-function changeTheme() {
- const textarea = document.querySelector('.darkmode');
 
-
- // Check if current theme is dark
- const isDarkMode = textarea.style.backgroundColor === 'black';
-
- // Toggle between dark and light mode
- if (isDarkMode) {
-     // Light mode
-     textarea.style.backgroundColor = 'white';
-     textarea.style.color = 'black';
-     
- } else {
-     // Dark mode
-     textarea.style.backgroundColor = 'black';
-     textarea.style.color = 'white';
-    
- }
-}
 
  
