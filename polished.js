@@ -143,9 +143,7 @@ function handleShiftPress(event) {
      }
 
      function erase(){
-       
-          let backspaceTimer;
-          backspaceTimer = setInterval(document.execCommand('delete', false), 100);
+       document.execCommand('delete', false);     
      }
 
      function PrintText() {
