@@ -120,7 +120,7 @@ margin: 0;
      .eks{
        box-sizing: border-box;
        border-radius: 50%;
-       border: 0.1vw solid red;
+       border: 0.1vw solid maroon;
     
     }
 }
