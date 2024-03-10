@@ -45,7 +45,7 @@
         height: 45.5vh;
         background-color: rgb(242, 242, 242);
         font-size: 0;
-        text-align: center;
+        margin: 0 auto;
       }
 
       .keyboard-btn {
@@ -123,12 +123,13 @@
     width: 140px;
     height: 35px;
   }
-  #text-display{
+  #text-display {
     height: 40vh;
     font-size: 20px;
     padding: 35px;
   }
-  #wrapper{
-    height: 40vh;
+  #wrapper {
+    height: 41vh;
+    
   }
 }
