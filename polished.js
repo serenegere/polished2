@@ -148,7 +148,11 @@ function handleShiftPress(event) {
 
      function PrintText() {
        window.print();
-     } 
+     }
+
+     function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+     }
 
 
 
