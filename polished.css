@@ -116,6 +116,45 @@ margin: 0;
   }
 }
 
+@media screen and (min-width: 1366px) and (orientation: landscape) and (min-height: 720px) {
+     .keyboard-btn{
+    
+    font-size: 1.75vw;
+    width: 5vw;
+    border-radius: 1vw;
+    border: 0.1vw solid rgb(163, 163, 163);
+    margin: 0.1vw;
+    
+   
+
+  }
+     
+  #spacebar {
+    width: 20vw;
+    height: 5vw;
+  }
+     #text-display {
+    font-size: 1.85vw;
+    border-bottom: 0.1vw solid rgb(163, 163, 163);
+    padding: 3vw;
+}
+     h1 {
+    font-size: 2.5vw;
+}
+     #heading {
+    padding: 0 4vw;
+    border-bottom: 0.1vw solid rgb(163, 163, 163);
+}
+#printButton {
+    width: 4vw;
+    height: 2vw;
+    font-size: 0.5vw;
+    border-radius: 1.5vw;
+}
+}
+
+
+
 @media print {
         h1, button, #wrapper, #heading {
             display: none;
