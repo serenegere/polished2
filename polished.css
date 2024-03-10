@@ -12,11 +12,11 @@
         height: 12vh;
         background-color: rgb(252, 252, 252);
         border-bottom: 0.5px solid rgb(163, 163, 163);
-        font-size: calc(1.25vw + 1.25vh);
       }
 
       h1{
         font-family: Julius Sans One;
+        font-size: 25px;
       }
 
       #text-display {
