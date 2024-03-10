@@ -119,11 +119,9 @@ margin: 0;
   }
      .eks{
        box-sizing: border-box;
-       background-color: lightgrey;
-       border-top-radius: 50%;
-       border-top: 0.1vw solid red;
-       border-right: 0.1vw solid red;
-       border-left: 0.1vw solid red;
+       border-radius: 50%;
+       border: 0.1vw solid red;
+    
     }
 }
 
