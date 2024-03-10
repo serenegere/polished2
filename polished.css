@@ -116,10 +116,11 @@
     width: 35px;
     font-size: 10px;
     border: 0;
+    border-radius: 0;
   }
   #spacebar {
-    width: 100px;
-    height: 25px;
+    width: 140px;
+    height: 35px;
   }
   #text-display{
     height: 40vh;
