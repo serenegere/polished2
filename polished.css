@@ -104,6 +104,7 @@ margin: 0;
   #spacebar {
     width: 150px;
     height: 37.5px;
+    background-color: lightgrey;
   }
   #text-display {
     height: 40vh;
@@ -112,9 +113,6 @@ margin: 0;
   }
   #wrapper {
     height: 40.5vh;
-  }
-  #spacebar {
-    background-color: rgb(207, 221, 213);
   }
 }
 
