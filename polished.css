@@ -95,22 +95,22 @@
     
 @media screen and (max-width: 450px) and (orientation: portrait) and (max-height: 900px) {
   .keyboard-btn{
-    width: 37.5px;
-    font-size: 12px;
+    width: 9.75vw;
+    font-size: 3vw;
     border: 0;
     border-radius: 0;
 margin: 0;
   }
   #spacebar {
-    width: 150px;
-    height: 37.5px;
+    width: 39vw;
+    height: 9.75vw;
     background-color: lightgrey;
        border-radius: 5vw;
   }
   #text-display {
     height: 40vh;
-    font-size: 20px;
-    padding: 35px;
+    font-size: 6vw;
+    padding: 7.5vw;
   }
   #wrapper {
     height: 40.5vh;
