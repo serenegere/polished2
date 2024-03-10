@@ -152,9 +152,6 @@ function handleShiftPress(event) {
        window.print();
      }
 
-     function toggleDarkMode() {
-  document.querySelectorAll(".keyboard-btn").classList.toggle("dark-mode");
-     }
  
 
  
