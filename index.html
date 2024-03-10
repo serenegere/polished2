@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Nastaliq+Urdu:wght@400..700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="polished.css">
+    <title>Cashmere Keyboard</title>
+</head>
+<body>
+ <div id="heading" class="darkmode">
+  <h1>
+    <span style="color: maroon;">Cashmere</span> Keyboard
+  </h1>
+  <button onclick="changeTheme()">theme</button>
+  <button id="printButton" onclick="PrintText()">Print</button>
+</div>
+    <div lang="ks" dir="rtl" id="text-display" contenteditable="true" inputmode="none"> </div>
+    <div lang="ks" dir="rtl" id="wrapper">
+      <abbr style="text-decoration: none;" title="a"><button class="keyboard-btn red" onclick="appendToDisplay('ا')">ا</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + a"><button class="keyboard-btn red" onclick="appendToDisplay('َ')">َ</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + b"><button class="keyboard-btn red" onclick="appendToDisplay('آ')">آ</button></abbr>
+      <abbr style="text-decoration: none;" title="e"><button class="keyboard-btn red" onclick="appendToDisplay('ٔ')">ٔ</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + e"><button class="keyboard-btn red" onclick="appendToDisplay('ٲ')">ٲ</button></abbr>
+      <abbr style="text-decoration: none;" title="u"><button class="keyboard-btn red" onclick="appendToDisplay('ُ')">ُ</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + u"><button class="keyboard-btn red" onclick="appendToDisplay('وٗ')">وٗ</button></abbr>
+      <abbr style="text-decoration: none;" title="i"><button class="keyboard-btn red" onclick="appendToDisplay('ِ')">ِ</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + i"><button class="keyboard-btn red" onclick="appendToDisplay('یٖ')">یٖـ</button></abbr>
+      <abbr style="text-decoration: none;" title="y"><button class="keyboard-btn red" onclick="appendToDisplay('ی')">ی</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + y"><button class="keyboard-btn red" onclick="appendToDisplay('ے')">ے</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + j"><button class="keyboard-btn red" onclick="appendToDisplay('ؠ')">ؠ</button></abbr>
+      <abbr style="text-decoration: none;" title="w"><button class="keyboard-btn red" onclick="appendToDisplay('و')">و</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + w"><button class="keyboard-btn red" onclick="appendToDisplay('ۄ')">ۄ</button></abbr>
+      <abbr style="text-decoration: none;" title="f"><button class="keyboard-btn red" onclick="appendToDisplay('ٕ')">ٕ</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + f"><button class="keyboard-btn red" onclick="appendToDisplay('ٟ')">ٟ</button></abbr>
+      <abbr style="text-decoration: none;" title="v"><button class="keyboard-btn red" onclick="appendToDisplay('ٚ')">ٚ</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + v"><button class="keyboard-btn red" onclick="appendToDisplay('ٛ')">ٛ</button></abbr>
+      <abbr style="text-decoration: none;" title="o"><button class="keyboard-btn red" onclick="appendToDisplay('ہ')">ہ</button></abbr>
+      <abbr style="text-decoration: none;" title="h"><button class="keyboard-btn red" onclick="appendToDisplay('ھ')">ھ</button></abbr>
+      <abbr style="text-decoration: none;" title="Shift + n"><button class="keyboard-btn red" onclick="appendToDisplay('ں')">ں</button></abbr>
+    <abbr style="text-decoration: none;" title="b"><button class="keyboard-btn" onclick="appendToDisplay('ب')">ب</button></abbr>
+    <abbr style="text-decoration: none;" title="p"><button class="keyboard-btn" onclick="appendToDisplay('پ')">پ</button></abbr>
+    <abbr style="text-decoration: none;" title="t"><button class="keyboard-btn" onclick="appendToDisplay('ت')">ت</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + t"><button class="keyboard-btn" onclick="appendToDisplay('ٹ')">ٹ</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + m"><button class="keyboard-btn" onclick="appendToDisplay('ث')">ث</button></abbr>
+    <abbr style="text-decoration: none;" title="j"><button class="keyboard-btn" onclick="appendToDisplay('ج')">ج</button></abbr>
+    <abbr style="text-decoration: none;" title="c"><button class="keyboard-btn" onclick="appendToDisplay('چ')">چ</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + h"><button class="keyboard-btn" onclick="appendToDisplay('ح')">ح</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + x"><button class="keyboard-btn" onclick="appendToDisplay('خ')">خ</button></abbr>
+    <abbr style="text-decoration: none;" title="d"><button class="keyboard-btn" onclick="appendToDisplay('د')">د</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + d"><button class="keyboard-btn" onclick="appendToDisplay('ڈ')">ڈ</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + z"><button class="keyboard-btn" onclick="appendToDisplay('ذ')">ذ</button></abbr>
+    <abbr style="text-decoration: none;" title="r"><button class="keyboard-btn" onclick="appendToDisplay('ر')">ر</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + r"><button class="keyboard-btn" onclick="appendToDisplay('ڑ')">ڑ</button></abbr>
+    <abbr style="text-decoration: none;" title="z"><button class="keyboard-btn" onclick="appendToDisplay('ز')">ز</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + c"><button class="keyboard-btn" onclick="appendToDisplay('ژ')">ژ</button></abbr> 
+    <abbr style="text-decoration: none;" title="s"><button class="keyboard-btn" onclick="appendToDisplay('س')">س</button></abbr> 
+    <button onclick="erase()" class="keyboard-btn"><img width="40%" src="backspace.svg"></button>
+    <abbr style="text-decoration: none;" title="x"><button class="keyboard-btn" onclick="appendToDisplay('ش')">ش</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + s"><button class="keyboard-btn" onclick="appendToDisplay('ص')">ص</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + l"><button class="keyboard-btn" onclick="appendToDisplay('ض')">ض</button></abbr> 
+    <abbr style="text-decoration: none;" title="q"><button class="keyboard-btn" onclick="appendToDisplay('ط')">ط</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + q"><button class="keyboard-btn" onclick="appendToDisplay('ظ')">ظ</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + o"><button class="keyboard-btn" onclick="appendToDisplay('ع')">ع</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + g"><button class="keyboard-btn" onclick="appendToDisplay('غ')">غ</button></abbr>
+    <abbr><button id="spacebar" onclick="appendToDisplay(' ')" class="keyboard-btn"> </button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + p"><button class="keyboard-btn" onclick="appendToDisplay('ف')">ف</button></abbr>
+    <abbr style="text-decoration: none;" title="Shift + k"><button class="keyboard-btn" onclick="appendToDisplay('ق')">ق</button></abbr>
+    <abbr style="text-decoration: none;" title="k"><button class="keyboard-btn" onclick="appendToDisplay('ک')">ک</button></abbr>
+    <abbr style="text-decoration: none;" title="g"><button class="keyboard-btn" onclick="appendToDisplay('گ')">گ</button></abbr>
+    <abbr style="text-decoration: none;" title="l"><button class="keyboard-btn" onclick="appendToDisplay('ل')">ل</button></abbr>
+    <abbr style="text-decoration: none;" title="m"><button class="keyboard-btn" onclick="appendToDisplay('م')">م</button></abbr>
+    <abbr style="text-decoration: none;" title="n"><button class="keyboard-btn" onclick="appendToDisplay('ن')">ن</button></abbr>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۔')">۔</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('،')">،</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('؛')">؛</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay(':')">:</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('؟')">؟</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('!')">!</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('’')">’</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('”')">”</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('٪')">٪</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۱')">۱</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۲')">۲</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۳')">۳</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۴')">۴</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۵')">۵</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۶')">۶</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۷')">۷</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۸')">۸</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۹')">۹</button>
+    <button class="keyboard-btn numerals" onclick="appendToDisplay('۰')">۰</button>
+    </div>
+    <script src="polished.js"></script>
+    </body>
+    </html>
