@@ -2,9 +2,7 @@
         margin: 0;
         padding: 0;
       }
-    .eks{
-         font-family: arial;
-    }
+  
       #heading{
         box-sizing: border-box;
         display: flex;
@@ -89,6 +87,9 @@
         background-color: rgb(51, 51, 51);
         color: white;
       }
+  .eks{
+         font-family: arial;
+    }
      
 
 
