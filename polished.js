@@ -151,18 +151,8 @@ function handleShiftPress(event) {
      }
 
      function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
+  document.querySelectorAll(". keyboard-btn").classList.toggle("dark-mode");
      }
  
-     
-const keys = document.querySelectorAll('.keyboard-btn');
-    keys.forEach(character => {
-      character.addEventListener('touchstart', function() {
-        this.classList.add('active');
-      });
-      character.addEventListener('touchend', function() {
-        this.classList.remove('active');
-      });
-    });
 
  
