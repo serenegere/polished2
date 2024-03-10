@@ -75,7 +75,7 @@
       }
 
       #spacebar {
-        width: 272px; height: 68px;
+        width: 272px; height: 68px; 
       }
 
       .beaut {
@@ -131,5 +131,8 @@ margin: 0;
   }
   #wrapper {
     height: 40.5vh;
+  }
+  #spacebar {
+    background-color: rgb(252, 252, 252);
   }
 }
