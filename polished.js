@@ -151,7 +151,7 @@ function handleShiftPress(event) {
      }
 
      function toggleDarkMode() {
-  document.querySelectorAll(". keyboard-btn").classList.toggle("dark-mode");
+  document.querySelectorAll(".keyboard-btn").classList.toggle("dark-mode");
      }
  
 
