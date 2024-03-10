@@ -41,8 +41,6 @@
       }
 
       #wrapper {
-    display: flex;
-    align-items: center;
         width: 100vw;
         height: 45.5vh;
         background-color: rgb(242, 242, 242);
