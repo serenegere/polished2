@@ -15,8 +15,9 @@
       }
 
       #pair {
+        width: 150px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
       }
 
       h1{
