@@ -40,7 +40,7 @@
       }
 
       #wrapper {
-        width: 100%;
+        width: 100vw;
         height: 45.5vh;
         background-color: rgb(242, 242, 242);
         font-size: 0;
