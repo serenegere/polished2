@@ -32,7 +32,8 @@
         font-family: noto nastaliq urdu;
         width: 100%;
         height: 42.5vh;
-        overflow: auto;        
+        overflow: auto;   
+word-spacing: 0.3vw;     
       }
 
       #wrapper {
