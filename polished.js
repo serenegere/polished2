@@ -1,6 +1,5 @@
 
 
-// mapping for Cashmere keyboard
      const keyMapping = {
          'a': 'ا',
          'A': 'َ',
@@ -107,7 +106,7 @@
 
      let shiftPressed = false;
 
-     // Function to handle key presses
+    
      function handleKeyPress(event) {
          const key = shiftPressed ? event.key.toUpperCase() : event.key.toLowerCase();
          const cashmereChar = keyMapping[key];
@@ -118,14 +117,14 @@
          }
      }
 
-// Function to handle shift key press
+// to handle shift press
 function handleShiftPress(event) {
          if (event.key === 'Shift') {
              shiftPressed = true;
          }
      }
 
-     // Function to handle shift key release
+     // to handle shift key release
      function handleShiftRelease(event) {
          if (event.key === 'Shift') {
              shiftPressed = false;
@@ -133,7 +132,7 @@ function handleShiftPress(event) {
      }
 
      
-     // Attach key press event listener to the document
+     // key press event listener
      document.addEventListener('keypress', handleKeyPress);
      document.addEventListener('keydown', handleShiftPress);
      document.addEventListener('keyup', handleShiftRelease);
