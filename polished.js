@@ -111,20 +111,19 @@ document.getElementById('text-display').focus();
          const key = shiftPressed ? event.key.toUpperCase() : event.key.toLowerCase();
          const cashmereChar = keyMapping[key];
          if (cashmereChar !== undefined) {
-             event.preventDefault(); // Prevent default action (e.g., typing 'a' in the input field)
+             event.preventDefault(); 
              const textDisplay = document.getElementById('text-display');
-             document.execCommand('insertText', false, cashmereChar); // Insert text at cursor position
+             document.execCommand('insertText', false, cashmereChar);
          }
      }
 
-// to handle shift press
 function handleShiftPress(event) {
          if (event.key === 'Shift') {
              shiftPressed = true;
          }
      }
 
-     // to handle shift key release
+    
      function handleShiftRelease(event) {
          if (event.key === 'Shift') {
              shiftPressed = false;
@@ -132,7 +131,7 @@ function handleShiftPress(event) {
      }
 
      
-     // key press event listener
+
      document.addEventListener('keypress', handleKeyPress);
      document.addEventListener('keydown', handleShiftPress);
      document.addEventListener('keyup', handleShiftRelease);
@@ -145,7 +144,7 @@ function handleShiftPress(event) {
        document.execCommand('delete', false);     
      }
 
-     function PrintText() {
+     function printText() {
        window.print();
      }
 
