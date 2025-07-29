@@ -143,3 +143,6 @@ function handleShiftPress(event) {
      function erase(){
        document.execCommand('delete', false);     
      }
+
+
+
