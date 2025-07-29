@@ -104,6 +104,10 @@
          '\t': '\t'
      };
 
+window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('text-display').focus();
+  });
+
      let shiftPressed = false;
 
     
