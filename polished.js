@@ -143,11 +143,3 @@ function handleShiftPress(event) {
      function erase(){
        document.execCommand('delete', false);     
      }
-
-     function printText() {
-       window.print();
-     }
-
- 
-
- 
