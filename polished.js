@@ -138,10 +138,12 @@ function handleShiftPress(event) {
 
      function appendToDisplay(character) {
        document.execCommand('insertText', false, character);
+          document.getElementById('text-display').focus();
      }
 
      function erase(){
-       document.execCommand('delete', false);     
+       document.execCommand('delete', false);  
+          document.getElementById('text-display').focus();
      }
 
 
