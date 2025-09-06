@@ -139,6 +139,7 @@ function handleShiftPress(event) {
 
      function erase(){
        document.execCommand('delete', false);
+          document.getElementById('text-display').focus();
      }
 
 document.querySelector('.eks').addEventListener('mousedown', erase);
@@ -146,6 +147,7 @@ document.querySelector('.eks').addEventListener('mousedown', erase);
      function appendToDisplay(character) {
        document.execCommand('insertText', false, character);
      }
+
 
 
 
