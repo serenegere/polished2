@@ -142,11 +142,12 @@ function handleShiftPress(event) {
           document.getElementById('text-display').focus();
      }
 
-document.querySelector('.eks').addEventListener('mousedown', erase);
+document.querySelector('.eks').addEventListener('click', erase);
 
      function appendToDisplay(character) {
        document.execCommand('insertText', false, character);
      }
+
 
 
 
