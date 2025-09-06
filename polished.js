@@ -136,13 +136,18 @@ function handleShiftPress(event) {
      document.addEventListener('keydown', handleShiftPress);
      document.addEventListener('keyup', handleShiftRelease);
 
-     function appendToDisplay(character) {
-       document.execCommand('insertText', false, character);
-     }
 
      function erase(){
        document.execCommand('delete', false);
      }
+
+document.querySelector('.eks').addEventListener('mousedown', erase);
+
+     function appendToDisplay(character) {
+       document.execCommand('insertText', false, character);
+     }
+
+
 
 
 
