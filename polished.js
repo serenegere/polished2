@@ -137,16 +137,15 @@ function handleShiftPress(event) {
      document.addEventListener('keyup', handleShiftRelease);
 
 
-     function erase(){
-       document.execCommand('delete', false);
-          document.getElementById('text-display').focus();
-     }
-
-document.querySelector('.eks').addEventListener('click', erase);
+document.querySelector('.eks').addEventListener('mousedown', (e) => {
+     e.preventDefault();
+     document.execCommand('delete', false);
+};
 
      function appendToDisplay(character) {
        document.execCommand('insertText', false, character);
      }
+
 
 
 
