@@ -143,7 +143,11 @@ function erase(){
 
 document.querySelector('.eks').addEventListener('mousedown', erase);
 
-     function appendToDisplay(character) {
-       document.execCommand('insertText', false, character);
-     }
+function appendToDisplay(character) {
+  document.execCommand('insertText', false, character);
+  setTimeout(() => {
+    document.getElementById('text-display').focus();
+  }, 0);
+}
+
 
