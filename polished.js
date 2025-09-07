@@ -123,33 +123,20 @@ function handleShiftPress(event) {
          }
      }
 
-    
      function handleShiftRelease(event) {
          if (event.key === 'Shift') {
              shiftPressed = false;
          }
      }
 
-     
-
      document.addEventListener('keypress', handleKeyPress);
      document.addEventListener('keydown', handleShiftPress);
      document.addEventListener('keyup', handleShiftRelease);
-
 
 document.querySelector('.eks').addEventListener('mousedown', (e) => {
      e.preventDefault();
      document.execCommand('delete', false);
 };
-
      function appendToDisplay(character) {
        document.execCommand('insertText', false, character);
      }
-
-
-
-
-
-
-
-
