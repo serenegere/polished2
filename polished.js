@@ -161,5 +161,17 @@ function saveAsText() {
     URL.revokeObjectURL(link.href);
 }
 
-
-
+function saveAsRtf() {
+    const textContent = document.getElementById('text-display').innerText;
+    const rtfContent = `{\\rtf1\\ansi\\ansicpg1252\\deff0 {\\fonttbl {\\f0\\fnil\\fcharset0 Noto Nastaliq Urdu;}}\\viewkind4\\uc1\\pard\\qr\\rtlch\\f0\\fs48 ${textContent.replace(/\n/g, '\\par ').split('').map(char => {
+        const code = char.charCodeAt(0);
+        return code > 127 ? `\\u${code}?` : char;
+    }).join('')}\\par}`;
+    
+    const blob = new Blob([rtfContent], { type: 'application/rtf' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'kashmiri-text.rtf';
+    link.click();
+    URL.revokeObjectURL(link.href);
+}
