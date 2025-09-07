@@ -151,3 +151,15 @@ function appendToDisplay(character) {
 }
 
 
+function saveAsText() {
+    const textContent = document.getElementById('text-display').innerText;
+    const blob = new Blob([textContent], { type: 'text/plain;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'kashmiri-text.txt';
+    link.click();
+    URL.revokeObjectURL(link.href);
+}
+
+
+
